@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: space-between; /* Align items to the left and right edges of the container */
+  align-items: center;
+  padding-left: 5vw;
+
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+
+  .content {
+    flex: 1; /* Allow the content to grow to fill the available space */
+    text-align: left; /* Justify the content to the left */
+    max-width: 80vw;
+  }
+
+  .intro {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .sub-intro {
+    margin-top: 10px;
+  }
+
+  .skills {
+    .skill {
+      padding-top: 20px;
+    }
+  }
+}

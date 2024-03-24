@@ -20,8 +20,10 @@ export class MainComponent {
       link.href = urlObj.url;
       link.as = urlObj.as;
       link.onload = () => resolve();
-      link.onerror = () =>
-        reject(new Error(`Failed to preload asset: ${urlObj.url}`));
+      link.onerror = (e) => {
+        console.log(`Failed to preload asset: ${urlObj.url}`, e);
+        resolve();
+      };
       document.head.appendChild(link);
     });
   }
@@ -33,7 +35,11 @@ export class MainComponent {
         as: 'font',
       },
       {
-        url: '/assets/fonts/Alfa Slab One.ttf',
+        url: '/assets/fonts/Ubuntu-Regular.ttf',
+        as: 'font',
+      },
+      {
+        url: '/assets/fonts/Ubuntu-Medium.ttf',
         as: 'font',
       },
     ];

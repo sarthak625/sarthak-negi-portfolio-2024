@@ -1,1 +1,22 @@
-<p>work works!</p>
+<div class="container" id="skills">
+  <div class="content">
+    <div class="intro">MY SKILLS.</div>
+    <div class="sub-intro">
+      I specialize in web development and have expertise in WebRTC Based
+      Technologies. I am always curious to learn something new. Here are some of
+      the areas I have worked in:
+    </div>
+
+    <div class="skills">
+      <div *ngFor="let skill of skills" class="skill">
+        <div class="title">{{ skill.title }}</div>
+        <div class="progress">
+          <mat-progress-bar
+            mode="determinate"
+            value="{{ skill.value }}"
+          ></mat-progress-bar>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

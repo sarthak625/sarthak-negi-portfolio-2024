@@ -1,0 +1,49 @@
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.4em 0.4em;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.6s ease;
+  margin-top: 10px;
+}
+
+.close-button {
+  background-color: #dd7272;
+}
+
+.close-button:hover {
+  background-color: #df5353;
+}
+
+.download-button {
+  background-color: #8bdd72;
+}
+
+.download-button:hover {
+  background-color: #4edc23;
+}
+
+.container {
+  padding: 5px;
+  height: 100%;
+
+  .resume {
+    height: 100%;
+    iframe {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

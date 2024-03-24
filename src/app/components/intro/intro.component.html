@@ -1,1 +1,27 @@
-<p>intro works!</p>
+<div class="container">
+  <div class="content">
+    <div class="intro">Hi, I'm Sarthak</div>
+    <div class="sub-intro">
+      I have a passion for software engineering. I excel in all aspects of web
+      development. But I like to learn and experiment with newer and newer
+      technologies.
+    </div>
+    <button
+      mat-raised-button
+      color="primary"
+      class="ocean-button pc-only"
+      (click)="openPdfDialog()"
+    >
+      View My Resume
+    </button>
+    <button class="ocean-button mobile-only" (click)="downloadResume()">
+      Download My Resume
+    </button>
+  </div>
+  <div class="circle-container">
+    <div class="artistic-circle">
+      <div class="diagonal"></div>
+      <div class="circle"></div>
+    </div>
+  </div>
+</div>
