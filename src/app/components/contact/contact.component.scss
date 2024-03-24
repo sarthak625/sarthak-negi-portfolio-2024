@@ -1,0 +1,32 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  .intro {
+    padding-left: 5vh;
+    padding-top: 10vh;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .sub-intro {
+    padding-left: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+    font-size: 24px;
+  }
+
+  mat-card {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  mat-form-field {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}

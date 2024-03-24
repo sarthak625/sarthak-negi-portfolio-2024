@@ -15,6 +15,10 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { ResumeDialogComponent } from './components/resume-dialog/resume-dialog.component';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -35,6 +39,10 @@ import { ProjectsComponent } from './components/projects/projects.component';
     BrowserAnimationsModule,
     MatDialogModule,
     MatProgressBarModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
