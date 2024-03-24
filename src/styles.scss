@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@import "_globals";
+
+@font-face {
+  font-family: "Alegreya";
+  src: url("assets/fonts/Alegreya.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Alfa Slab One";
+  src: url("assets/fonts/Alfa Slab One.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+head,
+body {
+  background-color: $bg-color-default;
+  font-family: "Alegreya";
+  color: $color-default;
+  height: 100%;
+  width: 100%;
+}

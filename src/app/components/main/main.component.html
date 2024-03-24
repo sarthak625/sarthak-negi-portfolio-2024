@@ -1,0 +1,10 @@
+<div class="container" *ngIf="isLoaded">
+  <app-navbar></app-navbar>
+  <app-intro></app-intro>
+  <app-work></app-work>
+  <app-contact></app-contact>
+</div>
+
+<div class="container" *ngIf="!isLoaded">
+  <app-loader></app-loader>
+</div>
