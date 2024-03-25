@@ -1,6 +1,9 @@
+@import "../../../globals";
+
 .container {
   width: 100vw;
   height: 100vh;
+  background-color: #fff;
 
   .intro {
     padding-left: 5vh;
@@ -28,5 +31,11 @@
 
   button {
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #contactme {
+    background-color: $bg-color-default;
   }
 }

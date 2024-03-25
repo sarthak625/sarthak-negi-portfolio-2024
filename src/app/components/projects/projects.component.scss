@@ -1,0 +1,29 @@
+@import "../../../globals";
+
+.container {
+  height: 100vh;
+  padding-left: 5vw;
+  padding-top: 10vw;
+  background-color: $bg-color-default;
+
+  .intro {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .sub-intro {
+    padding-top: 2vw;
+    font-size: 24px;
+  }
+
+  .projects {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #projects {
+    display: none;
+  }
+}

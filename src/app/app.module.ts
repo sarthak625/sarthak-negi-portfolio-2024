@@ -19,6 +19,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { ProjectViewerComponent } from './components/project-viewer/project-viewer.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,7 @@ import { MatCardModule } from '@angular/material/card';
     LoaderComponent,
     ResumeDialogComponent,
     ProjectsComponent,
+    ProjectViewerComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,6 +46,7 @@ import { MatCardModule } from '@angular/material/card';
     MatFormFieldModule,
     MatButtonModule,
     MatCardModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

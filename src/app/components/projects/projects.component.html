@@ -1,1 +1,23 @@
-<p>projects works!</p>
+<div class="container" id="projects">
+  <div class="intro">PROJECTS.</div>
+  <div class="sub-intro">Here are some of my projects:</div>
+  <div class="projects">
+    <mat-grid-list cols="3" gutterSize="16px">
+      <mat-grid-tile *ngFor="let project of projects">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>{{ project.name }}</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p>{{ project.description }}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button color="accent" (click)="openDialog(project)">
+              View Details
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>

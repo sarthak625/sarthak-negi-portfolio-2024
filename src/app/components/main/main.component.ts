@@ -30,18 +30,18 @@ export class MainComponent {
 
   loadAssets() {
     const urlsToPreload: Array<PreloadURLObject> = [
-      {
-        url: '/assets/fonts/Alegreya.ttf',
-        as: 'font',
-      },
-      {
-        url: '/assets/fonts/Ubuntu-Regular.ttf',
-        as: 'font',
-      },
-      {
-        url: '/assets/fonts/Ubuntu-Medium.ttf',
-        as: 'font',
-      },
+      // {
+      //   url: '/assets/fonts/Alegreya.ttf',
+      //   as: 'font',
+      // },
+      // {
+      //   url: '/assets/fonts/Ubuntu-Regular.ttf',
+      //   as: 'font',
+      // },
+      // {
+      //   url: '/assets/fonts/Ubuntu-Medium.ttf',
+      //   as: 'font',
+      // },
     ];
 
     const promises = urlsToPreload.map((urlObj) => this.preloadAsset(urlObj));

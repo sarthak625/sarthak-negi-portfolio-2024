@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="buttons">
+    <button (click)="closeDialog()" class="button close-button">
+      Close ❌
+    </button>
+  </div>
+
+  <div class="project">
+    <div class="name">
+      {{ projectInfo.name }}
+      <div class="url" (click)="navigateTo(projectInfo.url)">Visit here 🔗</div>
+    </div>
+    <div class="description">{{ projectInfo.detailedDescription }}</div>
+    <div
+      class="preview"
+      *ngIf="projectInfo.assetUrl"
+      [style.background-image]="
+        projectInfo.assetUrl ? 'url(' + projectInfo.assetUrl + ')' : 'none'
+      "
+    ></div>
+  </div>
+</div>
